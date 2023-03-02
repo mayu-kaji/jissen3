@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML&CSS 実践2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+  <div id="load-animation">
+    <div class="load-object"></div>
+  </div>
+  <header id="header">
+    <nav id="js-nav">
+      <ul>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#news">ニュース</a></li>
+        <li><a href="#price">値段</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="top">
+      <div class="top_wrap">
+        <ul class="slideShow">
+          <li class="slide slide_img1"></li>
+          <li class="slide slide_img2"></li>
+          <li class="slide slide_img3"></li>
+        </ul>
+        <h1>メンズ脱毛サロン！</h1>
+      </div>
+    </section>
+    <section id="service">
+      <h1 class="section_title">サービス</h1>
+      <div class="service_wrap">
+        <div class="service_left">
+          <img src="img/service.jpeg" alt="serveice">
+        </div>
+        <div class="service_right">
+          <h3>新春割引サービス</h3>
+          <p>※以下条件のすべてを満たした場合に新春キャンペーンの適用となります。</p>
+          <hr>
+          <p>
+            個人契約のお客さまであること<br>
+            3回以上通うことができる方<br>
+            成人した男性の方<br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+      <h1 class="section_title">ニュース</h1>
+      <div class="news_wrap">
+        <p>2021/1/1 新年のご挨拶</p>
+        <p>2020/12/31 年末年始の店舗休業案内</p>
+        <p>2020/8/23 お盆休みによる店舗の休業案内</p>
+      </div>
+    </section>
+    <section id="price">
+      <h1 class="section_title">価格</h1>
+      <div class="price_wrap">
+        <table>
+          <tr>
+            <th>―</th>
+            <th>プランA</th>
+            <th>プランB</th>
+          </tr>
+          <tr>
+            <td>入会金</td>
+            <td>10万円</td>
+            <td>15万円</td>
+          </tr>
+          <tr>
+            <td>料金</td>
+            <td>900円/月</td>
+            <td>1500円/月</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="section_title">お問い合わせ</h1>
+      <form class="form" method="post">
+        <div>
+          <label for="name" >氏名:</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">メールアドレス:</label>
+          <input type="text" id="mail" name="user_maik">
+        </div>
+        <div>
+          <label for="tel">電話番号:</label>
+          <input type="text" id="tel" name="user_name">
+        </div>
+        <div>
+          <label for="msg">内容:</label>
+          <textarea name="user_msg" id="msg"></textarea>
+        </div>
+        <div class="button">
+          <button class="button_submit">送信</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer id="footer">
+    <div>
+      <small>&copy 2021 CODESTAR All right reserved.</small>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
